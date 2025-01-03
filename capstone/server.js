@@ -6,7 +6,7 @@ const borrowRoutes = require('./routes/borrowRoutes');
 
 const app = express();
 connectDB();
-app.use(express.json());
+app.use(express.json()); 
 
 app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
