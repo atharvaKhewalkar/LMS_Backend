@@ -8,6 +8,7 @@ const app = express();
 connectDB();
 app.use(express.json()); 
 
+//routes
 app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
 app.use('/api/borrow', borrowRoutes);
